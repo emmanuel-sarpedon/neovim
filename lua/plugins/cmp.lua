@@ -7,7 +7,7 @@ return {
     local cmp = require("cmp")
     opts.mapping = vim.tbl_extend("force", opts.mapping, {
       -- Navigation avec j/k quand le menu est visible
-      ["J"] = cmp.mapping(function(fallback)
+      ["<C-j>"] = cmp.mapping(function(fallback)
         if cmp.visible() then
           cmp.select_next_item()
         else
@@ -15,7 +15,7 @@ return {
         end
       end, { "i", "c" }),
 
-      ["K"] = cmp.mapping(function(fallback)
+      ["<C-k>"] = cmp.mapping(function(fallback)
         if cmp.visible() then
           cmp.select_prev_item()
         else
