@@ -12,3 +12,10 @@ vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
   end,
 })
 
+require("goto-preview").setup({
+  default_mappings = true,
+})
+
+require("template-string").setup({
+  remove_template_string = true,
+})
