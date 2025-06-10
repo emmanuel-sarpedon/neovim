@@ -12,7 +12,7 @@ return {
       },
       completion_delay_ms = 500, -- miliseconds before completion triggers, set this to -1 to disable and only allows manual trigger
       infill_options = {
-        max_tokens = 500,
+        max_tokens = 400,
         temperature = 0.3,
       },
     })
